@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Course Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    img {
+      margin-top: 10px;
+      width: 200px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Free Course Portal</h1>
+  <p>Enter your first name:</p>
+  <input type="text" id="nameInput" placeholder="Enter your first name">
+  <button onclick="checkName()">Submit</button>
+
+  <div id="result"></div>
+
+  <script>
+    function checkName() {
+      var name = document.getElementById("nameInput").value.trim().toLowerCase();
+      var resultDiv = document.getElementById("result");
+
+      if (name === "akash") {
+        resultDiv.innerHTML = "Tension mtt lo gunz 2029 pe gunzz bhr jayega tumhara<br><img src='https://via.placeholder.com/200x150.png?text=Akash+Image'>";
+      } else if (name === "sonu") {
+        resultDiv.innerText = "Owner of the website";
+      } else if (name === "gourav") {
+        resultDiv.innerHTML = "Khr khrate huye khrbuze 30 rupees kilo😂😂😂<br><img src='https://via.placeholder.com/200x150.png?text=Kharbuja'>";
+      } else if (name === "arvind") {
+        resultDiv.innerText = "Kya tum Arvind akela ho agr haa to tumhara comeback sedha last sem me hoga Gokul bhand k sath";
+      } else if (name === "abhay") {
+        resultDiv.innerText = "Kya tum abhi v maths 2 ki tyaari krne ka soch rhe ho agr  haa to tum chud skte ho thoda smbhal k";
+      } else if (name === "vishal") {
+        resultDiv.innerText = "Bille suar bc sarkari naukari milne k baad v chain nhi hai aagya hai course krne";
+      } else {
+        resultDiv.innerText = "tum suar ho tumse na hoga";
+      }
+    }
+  </script>
+</body>
+</html>
